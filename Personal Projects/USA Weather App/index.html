@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <p class="app-message" id="appMessage">Search a city!</p>
+    <div class="app-container">
+        <h1>USA - Weather App</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search City, State">
+            <button class="search-btn" id="searchBtn">Search</button>
+        </div>
+        <hr class="bar">
+        <div class="display" id="display">
+            <p class="city" id="city"></p>
+            <hr class="display-bar">
+            <p class="temp" id="temp"></p>
+            <div class="wind">
+                <div class="wind-speed">
+                    <p>Wind Speed:</p>
+                    <span id="windSpeed"></span>
+                </div>
+                <div class="wind-direction">
+                    <p>Wind Direction:</p>
+                    <span id="windDirection"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

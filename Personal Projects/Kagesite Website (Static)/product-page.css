@@ -1,0 +1,523 @@
+/* GOOGLE FONT IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  background: teal;
+  color: white;
+}
+
+
+/* ----- HEADER SECTION ----- */
+.header-section {
+  width: 100%;
+  background: #080808;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 3px solid white;
+}
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #00b65e;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.nav-sign-in {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 25px;
+  background: black ;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+.nav-sign-in:hover {
+  background: #00b65e;
+  color: white;
+  transform: translateX(8px);
+}
+
+/* --------------- PRODUCT ITEM SECTION --------------- */
+#product-item-section {
+  padding-top: 180px;
+  width: 100%;
+}
+
+.product-section-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  border: 3px solid lightgrey;
+  border-radius: 5px;
+  padding: 40px 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-col {
+  background: lightblue;
+}
+
+#filler-square {
+  display: flex;
+  width: 100%;
+  background: lightgrey;
+  margin: auto;
+}
+
+#filler-square p {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+#filler-square:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.right-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.col-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-bar {
+  border: none;
+  height: 2px;
+  background: black;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.product-name {
+  font-size: 42px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  padding: 0 8px;
+}
+
+.product-model {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 8px;
+}
+
+.product-cost {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#quantity  {
+  padding: 4px 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid grey;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.product-desc {
+  width: 90%;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding: 10px 8px;
+}
+
+.product-button {
+  padding: 10px 8px;
+}
+
+.product-button button {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 35px;
+  background: white;
+  border: 3px solid black;
+  border-radius: 50px;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-button button:hover {
+  background: #00b65e;
+  color: white;
+  transform: translateX(20px);
+}
+
+/* --------------- SIMILAR SECTION --------------- */
+#similar-section {
+  padding-top: 80px;
+  width: 100%;
+}
+
+.similar-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 40px 60px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.similar-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  padding: 20px 0;
+  margin: auto;
+}
+
+.similar-grid a {
+  margin: auto;
+  text-decoration: none;
+  color: black;
+}
+
+.similar-col {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  max-width: 300px;
+  border: 3px solid lightgrey;
+  border-radius: 5px;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+.similar-col:hover {
+  transform: translateY(-8px);
+  border: 3px solid grey;
+  box-shadow: 0 0 15px -5px black;
+}
+
+.similar-left {
+  margin-right: 12px;
+}
+
+#similar-filler-square {
+  display: flex;
+  background: lightgrey;
+  margin: auto;
+  min-width: 120px;
+  border-radius: 2px;
+}
+
+#similar-filler-square p {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+#similar-filler-square:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.similar-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 12px 8px;
+}
+
+.similar-right h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.similar-right p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.similar-bar {
+  width: 90%;
+  max-width: 1275px;
+  margin: auto;
+  background: black;
+  border: none;
+  height: 3px;
+}
+
+/* --------------- REVIEWS SECTION --------------- */
+#reviews-section {
+  padding-top: 0px;
+  width: 100%;
+}
+
+.reviews-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 40px 60px;
+}
+
+.reviews-section-title {
+  text-align: left;
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+.reviews-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0 60px;
+}
+
+.review-left-col {
+  display: flex;
+  width: 50%;
+}
+
+.review-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.review-icon span {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-right-col {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  font-weight: 300;
+}
+
+.review-bar {
+  width: 100%;
+  max-width: 1275px;
+  background: lightgrey;
+  border: none;
+  height: 3px;
+  margin-bottom: 60px;
+}
+
+/* --------------- CONTACT SECTION --------------- */
+#contact-section {
+  padding: 80px 0 0px;
+}
+
+.contact-container {
+  width: 50%;
+  margin: auto;
+  padding: 25px 50px;
+  border: 3px solid grey;
+  border-radius: 5px;
+  box-shadow: 0 0 15px -5px black;
+}
+
+.contact-section-title {
+  width: 100%;
+  margin: auto;
+  padding: 0 0 20px;
+}
+
+.contact-section-title h2 {
+  font-size: 64px;
+  margin-bottom: 12px;
+}
+
+.contact-section-title p {
+  font-size: 15px;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.info p {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.info span {
+  font-size: 30px;
+  margin-right: 8px;
+}
+
+/* ----- MOBILE MEDIA QUREY ----- */
+@media (max-width: 600px) {
+  #contact-section {
+    padding: 100px 0 140px;
+  }
+
+  .contact-section-title h2 {
+    font-size: 42px;
+    margin-bottom: 12px;
+  }
+
+  .contact-section-title p {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 12px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info p {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* --------------- FOOTER SECTION --------------- */
+.footer-section {
+  margin-top: 100px;
+  width: 100%;
+  background: #080808;
+}
+
+.footer-navbar {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-bottom: 3px solid white;
+}
+
+.footer-navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 20px;
+  position: relative;
+}
+
+.footer-navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #00b65e;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-navbar ul li:hover::after {
+  width: 100%;
+}
+
+.trademark {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0 30px;
+}
+
+.trademark h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.trademark h4 a {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.trademark h4 a:hover {
+  color: #00b65e;
+}
+
+.trademark p {
+  font-size: 16px;
+  color: white;
+}

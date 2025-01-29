@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightpink;
+    width: 90%;
+    max-height: 400px;
+    max-width: 700px;
+    padding: 24px 18px;
+    margin-top: 36px;
+    border-radius: 18px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.app-message {
+    letter-spacing: 0.8px;
+}
+
+.search-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 90%;
+    margin: 12px 0 12px;
+}
+.search-container input {
+    background: white;
+    color: #b47a82;
+    font-weight: bold;
+    width: 100%;
+    font-size: 18px;
+    padding: 8px 18px;
+    border: 2px solid #b47a82;
+    border-radius: 50px;
+}
+.search-container button {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b47a82;
+    padding: 8px 18px;
+    border: 2px solid #b47a82;
+    border-radius: 50px;
+    background-color: white;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.search-container button:hover {
+    background-color: #b47a82;
+    color: white;
+}
+
+.display {
+    display: none; /* CHANGES WITH JS */
+    flex-direction: column;
+    gap: 12px;
+    background-color: #775e94;
+    width: 90%;
+    padding: 24px;
+    color: white;
+    border-radius: 12px;
+    overflow-y: scroll;
+}
+
+.word {
+    font-size: 36px;
+}
+
+.word-defintion {
+    font-size: 20px;
+    font-style: italic;
+}
+

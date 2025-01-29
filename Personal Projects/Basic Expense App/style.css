@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.total-cost {
+    color: rgb(212, 21, 21);
+}
+
+input {
+    font-size: 14px;
+    padding: 4px 6px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+button {
+    font-size: 14px;
+    padding: 4px 12px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.input-container {
+    margin-bottom: 20px;;
+}
+
+.expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(244, 244, 244);
+    padding: 12px;
+    list-style-type: none;
+    border: 2px solid rgb(203, 203, 203);;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.cost {
+    color: rgb(212, 21, 21);
+}

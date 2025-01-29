@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.app-message {
+    color: #242f39;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 12px 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #abb6c0;
+    padding: 0 0 24px 0;
+    border: 2px solid #242f39;
+    border-radius: 12px;
+    /* height: 500px; */
+}
+
+h1 {
+    font-size: 32px;
+    color: #242f39;
+}
+
+.search-container {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    margin-bottom: 24px;
+}
+.search-container input {
+    width: 100%;
+    font-size: 18px;
+    padding: 6px 8px;
+    border: 2px solid #242f39;
+    border-radius: 8px;
+}
+.search-btn {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 4px 24px;
+    border: 2px solid #242f39;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.search-btn:hover {
+    background-color: #242f39;
+    color: white;
+}
+
+.bar {
+    display: none;
+    width: 80%;
+    border: 1px solid #242f39;
+    margin-bottom: 24px;
+}
+
+.display {
+    display: none; /* CHANGES USING JS*/
+    flex-direction: column;
+    align-items: center;
+    background-color: #708090;
+    color: white;
+    width: 80%;
+    text-align: center;
+    border: 2px solid #242f39;
+    border-radius: 8px;
+    /* padding: 12px; */
+}
+
+.city {
+    font-weight: bold;
+    font-size: 28px;
+    padding: 0;
+    margin: 18px 0;
+}
+.display-bar {
+    border: 1px solid #242f39;
+    width: 60%;
+    margin-bottom: 18px;
+}
+
+.temp {
+    display: flex;
+    align-items: start;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 24px;
+}
+.degree-symbol {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.wind {
+    background-color: #242f39;
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    border-radius: 8px;
+}
+.wind-speed {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.wind-direction {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.wind p {
+    font-size: 18px;
+    padding: 0;
+    margin: 0 0 4px;
+}
+.wind span {
+    font-size: 18px;
+    font-weight: bold;
+}
