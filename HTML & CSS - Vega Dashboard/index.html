@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vega Challenge</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="head-left">
+      <span><a href=""><i class="fa-solid fa-bars"></i></a></span>
+      <span class="logo"><a href=""><img src="./vega-logo.png" alt="logo"></a></a></span>
+    </div>
+    <div class="head-search">
+      <span><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></span>
+      <input type="text" placeholder="Search here...">
+    </div>
+    <div class="head-tools">
+      <button><a href=""><i class="fa-solid fa-plus"></i></a>Create</button>
+      <span><a href=""><i class="fa-solid fa-bell"></i></a></span>
+      <span><a href=""><i class="fa-solid fa-user"></i></a></span>
+    </div>
+  </header>
+
+  <main>
+    <div class="left">
+      <ul>
+        <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href=""><i class="fa-solid fa-calendar"></i>Calendar</a></li>
+        <li><a href=""><i class="fa-solid fa-message"></i>Chat</a></li>
+        <li><a href=""><i class="fa-solid fa-user-group"></i>Groups</a></li>
+        <li><a href=""><i class="fa-solid fa-flag"></i>Events</a></li>
+        <li><a href=""><i class="fa-solid fa-location-dot"></i>Nearby</a></li>
+        <li><a href=""><i class="fa-solid fa-building"></i>Locations</a></li>
+        <li><a href=""><i class="fa-solid fa-certificate"></i>Attendance</a></li>
+        <hr>
+        <li><a href=""><i class="fa-solid fa-gear"></i>Settings</a></li>
+      </ul>
+      <span>Version 1.0</span>
+    </div>
+    <div class="middle">
+      <div class="search-streaks">
+        <h3>Search Streaks</h3>
+        <div class="search-row">
+          <div class="search-options">
+            <select name="" id="">
+              <option value="most-attendance">Most Attendance</option>
+            </select>
+            <p>at</p>
+            <select name="" id="">
+              <option value="group-type">Select Group Event Type...</option>
+            </select>
+            <select name="" id="">
+              <option value="year">This Year</option>
+            </select>
+          </div>
+          <button><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+        </div>
+      </div>
+      <div class="group">
+        <div class="top-container">
+          <h3>Group Attendance I Want to Watch</h3>
+          <a href=""><p>+ Add Group To Watch</p></a>
+        </div>
+        <div class="content">
+          <div class="card">
+            <div class="card-top">
+              <p class="card-title">Volleyball</p><span>14%<i class="fa-solid fa-angles-up"></i></span>
+            </div>
+            <div class="card-awards">
+              <div class="top-award">
+                <i class="fa-solid fa-medal"></i>
+                <div class="award-info">
+                  <p class="award">Most Attended</p>
+                  <p class="person">Jason Doley</p>
+                </div>
+              </div>
+              <hr>
+              <div class="top-award">
+                <i class="fa-solid fa-medal"></i>
+                <div class="award-info">
+                  <p class="award">Biggest Streak</p>
+                  <p class="person">Heather Moss</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <p class="card-title">JV Tennis</p><span class="down">2%<i class="fa-solid fa-angles-down"></i></span>
+            </div>
+            <div class="card-awards">
+              <div class="top-award">
+                <i class="fa-solid fa-medal"></i>
+                <div class="award-info">
+                  <p class="award">Most Attended</p>
+                  <p class="person">Mark Brown</p>
+                </div>
+              </div>
+              <hr>
+              <div class="top-award">
+                <i class="fa-solid fa-medal"></i>
+                <div class="award-info">
+                  <p class="award">Biggest Streak</p>
+                  <p class="person">Greg Nybo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <p class="card-title">Girls Soccer</p><span>19%<i class="fa-solid fa-angles-up"></i></span>
+            </div>
+            <div class="card-awards">
+              <div class="top-award">
+                <i class="fa-solid fa-medal"></i>
+                <div class="award-info">
+                  <p class="award">Most Attended</p>
+                  <p class="person">Mark Brown</p>
+                </div>
+              </div>
+              <hr>
+              <div class="top-award">
+                <i class="fa-solid fa-medal"></i>
+                <div class="award-info">
+                  <p class="award">Biggest Streak</p>
+                  <p class="person">Greg Nybo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules">
+        <div class="top-container">
+          <h3>Your Point Rules</h3>
+          <a href=""><p>+ Add Points Rule</p></a>
+        </div>
+        <div class="rules-row">
+          <div class="info"><span>For every check-in</span>at <span>All Orem HS</span>events, award <span>5 pts</span></div>
+          <a href=""><i class="fa-solid fa-pencil"></i></a>
+
+        </div>
+        <hr>
+        <div class="rules-row">
+          <div class="info"><span>For every check-in</span>at <span>All Valleyballl</span>events, award <span>1 pt</span></div>
+          <a href=""><i class="fa-solid fa-pencil"></i></a>
+        </div>
+      </div>
+
+      <div class="shop">
+        <div class="top-container">
+          <h3>Shops Where Points Can Be Used</h3>
+          <a href=""><p>+ Add Shops</p></a>
+        </div>
+        <div class="shop-row">
+          <div class="info"><span><a href="">School General Store</a></span></div>
+          <a href=""><i class="fa-solid fa-pencil"></i></a>
+
+        </div>
+        <hr>
+        <div class="shop-row">
+          <div class="info"><span><a href="">Online Gift Cards</a></span></div>
+          <a href=""><i class="fa-solid fa-pencil"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <h3>Top Steaks</h3>
+      <div class="trophy-card">
+        <p>Student</p>
+        <span>Burt Furgeson</span>
+        <img src="./trophy11.png" alt="trophy">
+        <span>8x @ Girls Volleyball</span>
+      </div>
+      <div class="trophy-card">
+        <p>Parent</p>
+        <span>Dana Fields</span>
+        <img src="./trophy11.png" alt="trophy">
+        <span>15x @ JV Football</span>
+      </div>
+      <div class="trophy-card">
+        <p>Community</p>
+        <span>Rob Caldwell</span>
+        <img src="./trophy11.png" alt="trophy">
+        <span>12x @ JV Football</span>
+      </div>
+      <div class="trophy-card">
+        <p>Community</p>
+        <span>Rachel Frasier</span>
+        <img src="./trophy11.png" alt="trophy">
+        <span>15x @ Soccer</span>
+      </div>
+      
+    </div>
+  </main>
+</body>
+</html>
